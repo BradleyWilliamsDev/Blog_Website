@@ -1,0 +1,20 @@
+<%- include("partials/navbar.ejs") %>
+<div class="blog-heading">
+  <h2><%= post.title %></h2>
+  <h6><%= post.author %></h6>
+</div>
+<div class="blogpost-content">
+  <p class="blog-text"><%= post.content %></p>
+</div>
+
+<div class="blogpost-buttons">
+  <a class="blog-button" href="/blog/<%= post.ID %>/Edit"
+    ><button class="cta_button">Edit this post</button></a
+  >
+
+  <form class="blog-button" action="/blog/<%= post.ID %>/Delete?_method=DELETE" method="POST">
+    <input type="submit" value="Delete Post" class="cta_button" />
+  </form>
+</div>
+
+<%- include("partials/footer.ejs") %>

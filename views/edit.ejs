@@ -1,0 +1,13 @@
+<%- include("partials/navbar.ejs") %>
+<div class="form-container">
+<h1 class="form-heading"> Edit Your Blog Here: </h1>
+
+<form action="/blog/<%= postinfo.ID %>/edited" method="POST">
+    <input name="title" type="text" class="feedback-input" value="<%= postinfo.title %>" />
+    <input name="author" type="text" class="feedback-input" value="<%= postinfo.author %>" />
+    <textarea name="text" class="feedback-input" placeholder="Enter you blog post here..."><%= postinfo.content %></textarea>
+    <input class="form-submit" type="submit" value="Update Post" class="cta_button"/>
+</form>
+</div>
+
+<%- include("partials/footer.ejs") %>

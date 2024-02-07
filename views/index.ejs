@@ -1,0 +1,26 @@
+<%- include("partials/navbar.ejs") %>
+<div class="form-container">
+  <h1 class="form-heading">Write Your Blog Here:</h1>
+
+  <form action="/submit" method="POST">
+    <input
+      name="title"
+      type="text"
+      class="feedback-input"
+      placeholder="Blog Title"
+    />
+    <input
+      name="author"
+      type="text"
+      class="feedback-input"
+      placeholder="Blog Author"
+    />
+    <textarea
+      name="text"
+      class="feedback-input"
+      placeholder="Comment"
+    ></textarea>
+    <input class="form-submit" type="submit" value="SUBMIT" />
+  </form>
+</div>
+<%- include("partials/footer.ejs") %>

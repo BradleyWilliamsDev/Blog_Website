@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav_header {
+  background-color: #24252a;
+}
+
+.nav_styling {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  max-height: 40px;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.cta_button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.cta_button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Styling Blog post section */
+
+.blog-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+}
+
+.blog-box {
+  width: 350px;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  margin: 20px;
+  min-height: 275px;
+  max-height: 275px;
+}
+
+.blog-text {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-text span {
+  color: #0088a9;
+  font-size: 0.9rem;
+}
+
+.blog-text .blog-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #24252a;
+}
+
+.blog-text .blog-title:hover {
+  color: #0088a9;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.blog-text p {
+  color: #24252a;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0px;
+}
+
+.readmore {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px 10px;
+}
+
+.blog-read {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #24252a;
+}
+
+.blog-read:hover {
+  color: #0088a9;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+/* Styling the input and edit sections */
+
+.form-heading {
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.feedback-input {
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #0088a9;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #24252a;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+.form-submit {
+  width: 100%;
+  background-color: rgba(0, 136, 169, 1);
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+.form-submit:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Viewing the blog post css */
+
+.blog-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.blogpost-content{
+    padding: 20px 100px;
+}
+
+.blogpost-buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px 150px;
+}
+
+.blog-button{
+    padding: 10px 15px;
+}
+
+
+
+
